@@ -1,0 +1,131 @@
+@import	"reset", "general";
+
+html {
+	background: $blanco;
+}
+
+body {
+	margin: 0;
+	@include type-body;
+	font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6, dt {
+	@include type-heading;
+	margin: 0;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.25em; }
+
+html,
+button,
+input,
+select,
+textarea {
+	@include type-body;
+}
+
+.error{
+    border-color: $color_error !important;
+}
+
+button{
+    border: 0;
+    background: none;
+    @include border_radius1;
+}
+
+
+.full{
+	@include display_flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+.wrap{
+    margin: 0 auto;
+	@include display_flex;
+    width: 100%;
+    max-width: 1366px;
+    height: 100%;
+    max-height: 768px;
+    align-items: center;
+}
+
+.flex{
+	@include display_flex;
+}
+
+.text_ali_rig{
+    text-align: right;
+}
+.text_ali_cen{
+    text-align: center;
+}
+
+
+.home article{
+    width: 55%;
+}
+
+.home article.right{
+    padding: 0 104px;
+    width: 45%;
+}
+
+.home article .botones{
+    padding-top: 30px;
+}
+
+.home article .botones button{
+    padding: 6px 0;
+    width: 33.3333%;
+}
+.home article .botones button img{
+    height: 18px;
+}
+.fb {
+    background-color: #3853A1;
+}
+.go {
+    margin: 0 20px;
+    border: 1px solid #C8D6E5;
+}
+.li {
+    background-color: #0077B7;
+}
+
+.home article button[type=submit] {
+    width: auto;
+    margin: 30px 0 70px 0;
+    padding: 10px 60px;
+    font-size: 0.8em;
+    color: $blanco;
+    background-color: $azul1;
+    @include border_radius3;
+}
+
+@import	"_input_animate", "_toggle-password";
+
+label.error, .owl-nav{
+    display: none !important;
+
+}
+
+.owl-theme .owl-dots{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 40px;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background: $blanco;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #FBB864;
+}
+
+@import	"_responsive";

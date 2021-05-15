@@ -1,0 +1,116 @@
+/* ------------------------------------------------------------------------
+Colores
+------------------------------------------------------------------------- */
+
+$blanco: #FFF;
+$text_color: #222F3E;
+
+$gris1: #8395A7;
+$gris2: #737373;
+
+$lila:#6C5DD3;
+
+$azul1: #354BD4;
+
+$color_error: #EE5253;
+
+/*
+#292930
+
+#000099
+
+#576574
+#576574
+#8395A7
+
+*/
+
+
+/* ------------------------------------------------------------------------
+Type Styles
+------------------------------------------------------------------------- */
+
+$font_site: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@mixin type-body {
+	font-family: $font_site;
+	line-height: 1.75em;
+	color: $text_color;
+}
+
+@mixin type-default {
+	font-weight: 300;
+}
+
+@mixin type-medium {
+	font-weight: 400;
+}
+
+@mixin type-heavy {
+	font-weight: 600;
+}
+
+@mixin type-heading {
+	@include type-heavy;
+	line-height: 1.25em;
+}
+
+
+/* ------------------------------------------------------------------------
+vertical-space
+------------------------------------------------------------------------- */
+
+$vertical-space: 0.6em;
+$vertical-space-small: $vertical-space/2;
+$vertical-space-large: $vertical-space*2;
+$vertical-space-xl: $vertical-space*4;
+
+
+/* ------------------------------------------------------------------------
+display_flex
+------------------------------------------------------------------------- */
+@mixin transition {
+	transition:0.2s ease all;
+}
+
+
+/* ------------------------------------------------------------------------
+display_flex
+------------------------------------------------------------------------- */
+@mixin display_flex {
+	display: flex;
+}
+
+
+/* ------------------------------------------------------------------------
+border-radius
+------------------------------------------------------------------------- */
+@mixin border_radius1 {
+	border-radius: 10px;
+}
+
+@mixin border_radius2 {
+	border-radius: 4px;
+}
+
+@mixin border_radius3 {
+	border-radius: 22px;
+}
+
+
+/* ------------------------------------------------------------------------
+links
+------------------------------------------------------------------------- */
+a {
+	color: $lila;
+	text-decoration: none;
+	@include transition;
+
+	&:hover, &:focus {
+		color: lighten($lila,10%);
+	}
+
+	&:active {
+		color: darken($lila,10%);
+	}
+}

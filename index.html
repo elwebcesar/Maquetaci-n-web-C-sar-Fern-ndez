@@ -1,0 +1,88 @@
+<!doctype html> 
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Cesar Fernandez">
+
+    <link rel="shortcut icon" href="https://nubecolectiva.com/favicon.ico" />
+
+    <title>Cesar Fernandez - Ejercicio</title>
+    <!--
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- slider -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/css/animate.css">
+    <script src="/owlcarousel/owl.carousel.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css" media="all" />
+</head>
+<body>
+  <div class="full">
+    <section class="wrap home">
+      <article>
+          <div class="owl-carousel owl-theme">
+            <div class="item"><img src="./img/slider001.jpg"></div>
+            <div class="item"><img src="./img/slider002.jpg"></div>
+            <div class="item"><img src="./img/slider003.jpg"></div>
+            <div class="item"><img src="./img/slider004.jpg"></div>
+        </div>
+      </article>
+      <article class="right">
+        <h1>Iniciar sesión</h1>
+        <p>Selecciona como deseas ingresar a la plataforma</p>
+
+        <div class="flex botones">
+          <button class="fb"><img src="./img/Icon-facebook.svg"></button>
+          <button class="go"><img src="./img/Icon-google.png"></button>
+          <button class="li"><img src="./img/Icon-linkedin.svg"></button>  
+        </div>
+
+        <form action="dashboard.html" name="form_acceso">
+          <div class="input_animate">
+            <div class="form-group">
+              <input type="email" name="" required>
+              <label>Correo electrónico</label>
+            </div>
+  
+            <div class="form-group">
+              <input id="password-field" type="password" name="" required>
+              <label>Contraseña</label>
+              <a href="javascript:void(0);" toggle="#password-field" class="toggle-password"><img src="./img/eye_open.svg"><img src="./img/eye_close.svg"></a>
+            </div>  
+          </div>
+
+          <div class="text_ali_rig">
+            <a href="#">¿Olvidaste tu contraseña?</a>
+          </div>
+
+          <div class="text_ali_cen">
+            <button type="submit" value="Submit">Iniciar sesión</button>
+            <p>¿Aún no tienes cuenta? <a href="#">Regístrate</a></p>
+          </div>
+        </form>
+      </article>
+    </section>
+  </div>
+
+  <script src="./js/home.js"></script>
+</body>
+</html>

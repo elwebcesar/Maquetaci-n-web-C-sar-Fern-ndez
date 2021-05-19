@@ -1,4 +1,4 @@
-@import	"reset", "general";
+@import	"reset", "_general", "_grid";
 
 html {
 	background: $blanco;
@@ -11,13 +11,17 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, dt {
+    width: 100%;
 	@include type-heading;
 	margin: 0;
 }
 
 h1 { font-size: 2em; }
 h2 { font-size: 1.5em; }
-h3 { font-size: 1.25em; }
+h3 {
+    font-size: 1.25em;
+    @include type-medium;
+}
 
 html,
 button,
@@ -28,7 +32,7 @@ textarea {
 }
 
 .error{
-    border-color: $color_error !important;
+    border: 1px solid $color_error !important;
 }
 
 button{
@@ -66,66 +70,128 @@ button{
     text-align: center;
 }
 
-
-.home article{
-    width: 55%;
+.back_blanco{
+    background-color: $blanco;
+    @include border_radius4;
 }
 
-.home article.right{
-    padding: 0 104px;
-    width: 45%;
+.margin30{
+    margin: 30px;
+}
+.margin30_Up{
+    margin: 30px 0;
 }
 
-.home article .botones{
-    padding-top: 30px;
+
+@import	"_home";
+
+
+.flexbox-container-dashboard {
+	@include display_flex;
 }
 
-.home article .botones button{
-    padding: 6px 0;
-    width: 33.3333%;
-}
-.home article .botones button img{
-    height: 18px;
-}
-.fb {
-    background-color: #3853A1;
-}
-.go {
-    margin: 0 20px;
-    border: 1px solid #C8D6E5;
-}
-.li {
-    background-color: #0077B7;
-}
-
-.home article button[type=submit] {
-    width: auto;
-    margin: 30px 0 70px 0;
-    padding: 10px 60px;
-    font-size: 0.8em;
-    color: $blanco;
-    background-color: $azul1;
-    @include border_radius3;
-}
-
-@import	"_input_animate", "_toggle-password";
-
-label.error, .owl-nav{
-    display: none !important;
-
-}
-
-.owl-theme .owl-dots{
-    position: absolute;
-    z-index: 1;
+.flexbox-container-dashboard > section {
     width: 100%;
-    bottom: 40px;
-}
-.owl-theme .owl-dots .owl-dot span {
-    background: $blanco;
-}
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #FBB864;
+    height: 100vh;
 }
 
-@import	"_responsive";
+.flexbox-container-dashboard > section:first-child {
+    padding: 16px 18px;
+}
+.flexbox-container-dashboard > section:first-child header{
+	@include display_flex;
+    align-items: center;
+}
+
+
+@import	"_hamburger", "_sidebar";
+
+
+.flexbox-container-dashboard > section:last-child header{
+	@include display_flex;
+    flex-wrap: wrap;
+    height: 60px;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.flexbox-container-dashboard > section:last-child article{
+    padding: 60px;
+    height: calc(100vh - 60px);
+    background-color: $gris3;
+    overflow: auto;
+}
+
+
+
+form[name=form_buscar]{
+    @include display_flex;
+    width: calc(100% - 370px);;
+    align-items: center;
+}
+
+form[name=form_buscar] input{
+    padding: 5px 0 0 15px;
+    border: none;
+}
+
+.autocomplete-items{
+    position: absolute;
+    z-index: 100;
+    padding: 3px 5px;
+    background-color: $blanco;
+}
+
+
+@import	"_menu_dashboard";
+
+
+.dash{
+    display: block;
+}
+
+.dash h3 {
+    font-size: 1.7em;
+}
+.dash h4 {
+    font-size: 3.2em;
+}
+
+.dash [class^=col] div{
+    float: left;
+}
+
+.dash .fecha > div:first-child{
+    margin-right: 10px;
+    padding-top: 10px;
+    width: 54px;
+    height: 54px;
+    background: url(../img/calendar.png) center center no-repeat;
+
+}
+.dash .fecha > div:first-child strong{
+    display: block;
+    margin-bottom: -42px;
+    font-size: 1.2em;
+}
+.dash .fecha > div:last-child strong{
+    display: block;
+    margin: 8px 0 -33px 0;
+    color: $color_error;
+}
+
+.dash .grilla{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.dash .grilla h5{
+    font-size: 3em;
+}
+.dash .grilla .col_4{
+    border-left: 1px solid $gris3;
+}

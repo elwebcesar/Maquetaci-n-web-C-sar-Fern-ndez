@@ -1,0 +1,66 @@
+#sidebar {
+    width: 265px;
+/*    transition:0.1s ease all;*/
+}
+
+#sidebar.active {
+    width: 86px;
+}
+
+#sidebar.active header span img{
+    clip-path: inset(0 90px 0 0);
+}
+
+#sidebar nav {
+    margin-top: 45px;
+}
+
+#sidebar nav ul li{
+    display: grid;
+    margin-bottom: 5px;
+}
+
+#sidebar a {
+    padding: 13px 14px;
+    font-size: 0.78em;
+    color: $text_color;
+    vertical-align: middle;
+    @include border_radius4;
+}
+#sidebar a svg, #sidebar a span{
+    vertical-align: middle;
+}
+
+#sidebar a span{
+    padding-left: 8px;
+    overflow: hidden;
+    transition: clip-path 0.2s;
+}
+
+#sidebar.active a span{
+    display: none;
+    width: 0;
+}
+
+#sidebar a img svg{
+    width: 19px;
+}
+
+#sidebar a path {
+    fill: $gris1 !important;
+    @include transition;
+}
+
+#sidebar a:hover {
+    color: $blanco;
+    background-color: $lila;
+}
+
+#sidebar a:hover path {
+    fill: $blanco !important;
+}
+
+#sidebar.active a{
+    width: 50px;
+
+}

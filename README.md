@@ -9,23 +9,40 @@ Se utiliza una arquitectura Scalable and Maintainable CSS Architecture — Xfive
 
 Estructura:
 
-1. reset
+1. _reset
 Formateo de los estilos nativos, (<https://html5boilerplate.com/>).
 
-2. general
+2. _general
 Variables y declaraciones generales de SASS.
 
-3. style.scss
+3. _grid
+Esquema de grilla.
+
+4. style
 Armado del compilado SASS, se estipulas los estilos para este diseño en particular.
 
-4. _input_animate
-Personalización de los input en el home.
+5. _home
+Estilos del home - login.
 
-5. _toggle-password
+6. _input_animate
+Personalización de los input en el home - login.
+
+7. _toggle-password
 Estilos para el funcionamiento de la visualización de la contraseña.
 
-6. _responsive
-Estilos responsive.
+8. _responsive
+Estilos responsive del home - login.
+
+8. _hamburger
+Ícono de hamburguesa menú.
+
+9. _sidebar
+Configuración de la barra lateral.
+
+10. _menu_dashboard
+Configuración componentes material design.
+
+
 
 
 ## jQuery - javascript
@@ -36,7 +53,8 @@ Estilos responsive.
 
 ### Configuraciones
 - home.js: Configuraciones del slider, visualización del password y validación del formulario.
-
+- dashboard.js: Configuraciones interfaz del dashboard.
+- search.js: Funcionamiento del autocompletar en la búsqueda, toma un arreglo.
 
 
 #### Escrito por

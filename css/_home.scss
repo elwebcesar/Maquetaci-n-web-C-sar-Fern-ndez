@@ -1,0 +1,62 @@
+.home article{
+    width: 55%;
+}
+
+.home article.right{
+    padding: 0 104px;
+    width: 45%;
+}
+
+.home article .botones{
+    padding-top: 30px;
+}
+
+.home article .botones button{
+    padding: 6px 0;
+    width: 33.3333%;
+}
+.home article .botones button img{
+    height: 18px;
+}
+.fb {
+    background-color: #3853A1;
+}
+.go {
+    margin: 0 20px;
+    border: 1px solid #C8D6E5;
+}
+.li {
+    background-color: #0077B7;
+}
+
+.home article button[type=submit] {
+    width: auto;
+    margin: 30px 0 70px 0;
+    padding: 10px 60px;
+    font-size: 0.8em;
+    color: $blanco;
+    background-color: $azul1;
+    @include border_radius3;
+}
+
+@import	"_input_animate", "_toggle-password";
+
+label.error, .owl-nav, .visually-hidden{
+    display: none !important;
+
+}
+
+.owl-theme .owl-dots{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 40px;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background: $blanco;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #FBB864;
+}
+
+@import	"_responsive_home";

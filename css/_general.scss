@@ -7,23 +7,18 @@ $text_color: #222F3E;
 
 $gris1: #8395A7;
 $gris2: #737373;
+$gris3: #F4F5F7;
+$gris4: #EEF2F6;
 
 $lila:#6C5DD3;
 
 $azul1: #354BD4;
+$azul2: #2E86DE;
 
+$verde: #10AC84;
 $color_error: #EE5253;
 
-/*
-#292930
-
-#000099
-
-#576574
-#576574
-#8395A7
-
-*/
+$hover_nenu: #E9EFF5;
 
 
 /* ------------------------------------------------------------------------
@@ -51,6 +46,7 @@ $font_site: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @mixin type-heading {
+	font-family: $font_site;
 	@include type-heavy;
 	line-height: 1.25em;
 }
@@ -95,6 +91,10 @@ border-radius
 
 @mixin border_radius3 {
 	border-radius: 22px;
+}
+
+@mixin border_radius4 {
+	border-radius: 12px;
 }
 
 

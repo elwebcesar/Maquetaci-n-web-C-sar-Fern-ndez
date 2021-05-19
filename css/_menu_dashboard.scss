@@ -1,0 +1,98 @@
+.menu_dashboard{
+  @include display_flex;
+  width: 370px;
+  justify-content: flex-end;
+}
+
+.menu_dashboard > .material-icons-outlined{
+  margin: 0 12px;
+}
+.menu_dashboard > button.user{
+  position: relative;
+  margin: 0 34px;
+  padding-right: 14px;
+}
+.menu_dashboard > button.user div{
+  position: absolute;
+  top: 5px;
+  right: 0;
+  transform: rotate(90deg);
+  @include transition;
+}
+.menu_dashboard > button.user.active div{
+  transform: rotate(270deg);
+}
+
+.mdl-list__item{
+  font-size: 0.9em;
+}
+
+.mdl-menu__container.is-visible .mdl-menu__outline{
+  border-radius: 0 0 10px 10px;
+}
+
+.menu_dashboard i, .menu_dashboard .mdl-badge{
+  color: $gris1;
+}
+
+.menu_dashboard .doble div{
+  display: b;
+  float: left;
+  width: 50%;
+}
+
+.mdl-badge[data-badge]:after{
+  top: -2px;
+}
+
+.mdl-badge[data-badge].badge_verde:after{
+  background: $verde;
+}
+.mdl-badge[data-badge].badge_azul:after{
+  background: $azul2;
+}
+
+.menu_dashboard .ico_bg h3{
+  padding: 22px;
+  color: $azul2;
+}
+
+.menu_dashboard .ico_bg li:hover{
+  background-color: $hover_nenu;
+}
+.menu_dashboard .ico_bg .mdl-list__item{
+  padding: 0;
+  width: 300px;
+}
+
+
+
+.menu_dashboard .ico_bg li, .menu_dashboard .user li.exit{
+  border-top: 1px solid $gris3;
+}
+
+.menu_dashboard .ico_bg li i{
+  padding: 22px;
+  font-size: 36px;
+}
+.menu_dashboard .ico_bg li:hover i{
+  color: $lila;
+}
+
+.menu_dashboard .user .mdl-list__item{
+  width: 200px;
+}
+
+.mdl-list__item-primary-content strong{
+  color: $text_color;
+}
+
+.menu_dashboard .user li i{
+  padding-right:  10px;
+}
+.menu_dashboard .user li a{
+  color: $gris1;
+}
+.menu_dashboard .user li:hover i, .menu_dashboard .user li:hover a{
+  color: $azul2;
+}

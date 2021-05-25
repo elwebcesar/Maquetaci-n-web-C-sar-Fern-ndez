@@ -1,0 +1,38 @@
+@media all and (max-width: 990px){
+    .home article.right {
+        padding: 0 80px;
+    }
+    .home article button[type=submit] {
+        margin: 30px 0;
+    }
+}
+
+@media all and (max-width: 870px){
+    .home article.right {
+        padding: 0 40px;
+    }
+    .home article button[type=submit] {
+        margin: 15px 0;
+    }
+}
+
+@media all and (max-width: 768px){
+    .wrap{
+        display: block;
+    }
+    .home article{
+        width: 100% !important;
+    }
+    .home article.right {
+        padding: 40px 60px;
+    }
+    .home article.right .text_ali_rig{
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 420px){
+    .home article.right {
+        padding: 30px 20px;
+    }
+}

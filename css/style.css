@@ -738,21 +738,21 @@ label.error, .owl-nav, .visually-hidden {
   background: #FBB864;
 }
 
-@media all and (max-width: 1100px) {
+@media all and (max-width: 990px) {
   .home article.right {
-    padding: 0 70px;
+    padding: 0 80px;
+  }
+  .home article button[type=submit] {
+    margin: 30px 0;
   }
 }
 
-@media all and (max-width: 960px) {
-  .home article .botones {
-    padding-top: 10px;
-  }
-  .input_animate .form-group {
-    margin: 20px 0;
+@media all and (max-width: 870px) {
+  .home article.right {
+    padding: 0 40px;
   }
   .home article button[type=submit] {
-    margin: 20px 0 40px 0;
+    margin: 15px 0;
   }
 }
 
@@ -764,10 +764,16 @@ label.error, .owl-nav, .visually-hidden {
     width: 100% !important;
   }
   .home article.right {
-    padding: 50px 40px;
+    padding: 40px 60px;
   }
-  .home article .botones {
-    padding: 30px 0 20px 0;
+  .home article.right .text_ali_rig {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .home article.right {
+    padding: 30px 20px;
   }
 }
 
@@ -960,6 +966,14 @@ form[name=form_buscar] input {
   background-color: #FFF;
 }
 
+.autocomplete-items div {
+  padding: 4px 6px;
+}
+
+.autocomplete-items div.autocomplete-active {
+  background-color: #F4F5F7;
+}
+
 .menu_dashboard {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -984,15 +998,15 @@ form[name=form_buscar] input {
   position: absolute;
   top: 5px;
   right: 0;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
   -webkit-transition: 0.2s ease all;
   transition: 0.2s ease all;
 }
 
 .menu_dashboard > button.user.active div {
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .mdl-list__item {

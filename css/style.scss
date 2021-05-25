@@ -143,6 +143,12 @@ form[name=form_buscar] input{
     padding: 3px 5px;
     background-color: $blanco;
 }
+.autocomplete-items div{
+    padding: 4px 6px;
+}
+.autocomplete-items div.autocomplete-active{
+    background-color: $gris3;
+}
 
 
 @import	"_menu_dashboard";

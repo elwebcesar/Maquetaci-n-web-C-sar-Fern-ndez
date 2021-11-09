@@ -1,6 +1,6 @@
 # readme
 
-Este repositorio es un ejercicio de maquetación web en html5, css y javascript.
+Este repositorio es un ejercicio de maquetación web en html5, css3 y javascript.
 
 ## CSS - SASS
 
